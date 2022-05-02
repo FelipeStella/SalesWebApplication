@@ -14,7 +14,7 @@ namespace SalesWebApplication.Services
     {
       _contect = contect;
     }
-    public IEnumerable<Department> FindAll()
+    public List<Department> FindAll()
     {
       return _contect.Department.OrderBy(d => d.Name).ToList();
     }
