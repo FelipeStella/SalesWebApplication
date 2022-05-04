@@ -22,6 +22,7 @@ namespace SalesWebApplication.Models
     [DataType(DataType.Date)]
     [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
     [Required(ErrorMessage = "{0} is Required")]
+    [MaxLength(10, ErrorMessage = "Date must follow the pattern dd/MM/yyyy")]
     public DateTime Date { get; set; }
 
     [Display(Name = "Base Salary")]
